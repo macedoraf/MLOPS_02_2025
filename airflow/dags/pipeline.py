@@ -25,7 +25,7 @@ AIRFLOW_TRANSFORMED_DATA_PATH = '/opt/airflow/data/transformed_data.csv'
 default_args = {
     'owner': 'airflow',
     'depends_on_past': False,
-    'start_date': datetime(2024, 1, 1),
+    'start_date': datetime(2025, 10, 25),
     'email_on_failure': False,
     'email_on_retry': False,
     'retries': 1,
