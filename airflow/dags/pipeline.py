@@ -34,7 +34,10 @@ default_args = {
 
 increment_data = {
     '25' : '2025/precos-gasolina-etanol-07.csv',
-    '26' : '2025/precos-gasolina-etanol-08.csv'
+    '26' : '2025/precos-gasolina-etanol-08.csv',
+    '27' : '2025/precos-gasolina-etanol-05.csv',
+    '28' : '2025/precos-gasolina-etanol-04.csv',
+    '29' : '2025/precos-gasolina-etanol-03.csv'
 }
 # -------------------- FUNCTIONS --------------------
 def extract_data():
