@@ -32,9 +32,15 @@ default_args = {
     'retry_delay': timedelta(minutes=5)
 }
 
+increment_data = {
+    '25' : '2025/precos-gasolina-etanol-07.csv',
+    '26' : '2025/precos-gasolina-etanol-06.csv'
+}
 # -------------------- FUNCTIONS --------------------
 def extract_data():
-    url = 'https://gov.br/anp/pt-br/centrais-de-conteudo/dados-abertos/arquivos/shpc/dsan/2025/precos-gasolina-etanol-07.csv'
+    print("🔄 Starting extraction process...")
+    day = datetime.now().day
+    url = f'https://gov.br/anp/pt-br/centrais-de-conteudo/dados-abertos/arquivos/shpc/dsan/{increment_data[day]}'
     response = requests.get(url)
     response.raise_for_status()
     
