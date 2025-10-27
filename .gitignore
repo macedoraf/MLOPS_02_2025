@@ -5,3 +5,4 @@ mlruns/
 02-dados/*.csv
 
 .DS_Store
+airflow/dags/__pycache__/pipeline.cpython-38.pyc
