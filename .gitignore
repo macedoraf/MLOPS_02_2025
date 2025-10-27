@@ -3,6 +3,7 @@ mlruns/
 02-dados/mlartifacts/
 02-dados/*.zip
 02-dados/*.csv
+__pycache__
 
 .DS_Store
 airflow/dags/__pycache__/pipeline.cpython-38.pyc
