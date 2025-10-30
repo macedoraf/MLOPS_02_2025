@@ -144,3 +144,44 @@
 - A presença no curso não garante vaga nos processos para MLE, mas prepara o aluno para oportunidades futuras.
 - A entrega dos notebooks práticos soma pontos para a seleção dos projetos finalistas.
 - Feedbacks estruturados serão fornecidos para cada aluno ao final do curso.
+
+
+# Airflow MLOps
+
+## How to run
+
+Create a .env file in airflow folder
+
+## Environment Variables
+
+```bash
+# Docker e Airflow
+AIRFLOW_IMAGE_NAME=apache/airflow:2.7.0
+AIRFLOW_UID=50000
+AIRFLOW_PROJ_DIR=.
+_AIRFLOW_WWW_USER_USERNAME=airflow
+_AIRFLOW_WWW_USER_PASSWORD=airflow
+
+# Banco de Dados
+POSTGRES_HOST=postgres
+POSTGRES_PORT=5432
+POSTGRES_USER=airflow
+POSTGRES_PASSWORD=airflow
+POSTGRES_DB=airflow
+
+# Redis
+REDIS_PASSWORD=redis
+
+# FERNET key (gere com: python -c "from cryptography.fernet import Fernet; print(Fernet.generate_key().decode())")
+AIRFLOW__CORE__FERNET_KEY=ohPY0mj81ErEw8K7ArJwEPtWYKIobMsJ3YH1qTgrCUk=
+
+```
+
+## Initialize the Docker Compose
+
+``` bash
+./entrypoint.sh
+```
+
+
+
