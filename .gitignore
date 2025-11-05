@@ -7,3 +7,6 @@ __pycache__
 
 .DS_Store
 airflow/dags/__pycache__/pipeline.cpython-38.pyc
+04-deploy/.venv/
+04-deploy/*.pkl
+.DS_Store
