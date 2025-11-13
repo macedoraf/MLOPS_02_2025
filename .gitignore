@@ -4,9 +4,14 @@ mlruns/
 02-dados/*.zip
 02-dados/*.csv
 __pycache__
-
 .DS_Store
 airflow/dags/__pycache__/pipeline.cpython-38.pyc
 04-deploy/.venv/
 04-deploy/*.pkl
 .DS_Store
+04-deploy/mlruns/
+04-deploy/Deploy_Aula_4_2/model_fit/mlartifacts/
+04-deploy/Deploy_Aula_4_2/model_fit/*.joblib
+.DS_Store
+__pycache__/
+.venv/
